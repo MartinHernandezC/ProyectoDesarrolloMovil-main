@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/search_location"
+        android:enabled="true"
+        android:icon="?attr/actionModePasteDrawable"
+        android:title="Catalogo"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:title="Contacto"
+        android:enabled="true"
+        android:icon="?android:attr/actionModeFindDrawable"
+        android:id="@+id/pin_drop"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:enabled="true"
+        android:title="Inicio"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>
