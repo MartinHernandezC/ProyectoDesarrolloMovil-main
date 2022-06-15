@@ -1,0 +1,17 @@
+package com.example.carrental
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
+
+class ContactoActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_contacto)
+        var btn = findViewById<Button>(R.id.btne);
+        btn.setOnClickListener{
+            Toast.makeText(this, "Gracias por los comentarios", Toast.LENGTH_SHORT).show()
+        }
+    }
+}

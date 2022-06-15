@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarRental">
         <activity
+            android:name=".CatalogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityHome"
             android:exported="false" />
         <activity

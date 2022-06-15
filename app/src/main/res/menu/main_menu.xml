@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <item
-        android:id="@+id/search_location"
+        android:id="@+id/catalogo"
         android:enabled="true"
         android:icon="?attr/actionModePasteDrawable"
         android:title="Catalogo"
@@ -14,7 +14,7 @@
         android:title="Contacto"
         android:enabled="true"
         android:icon="?android:attr/actionModeFindDrawable"
-        android:id="@+id/pin_drop"
+        android:id="@+id/contacto"
         app:showAsAction="ifRoom"
         />
     <item

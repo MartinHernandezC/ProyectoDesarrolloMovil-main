@@ -118,7 +118,7 @@
         android:background="@android:color/darker_gray"
         android:clickable="false"
         android:focusable="false"
-        android:hint="dd/mm/aaaa"
+        android:hint="dd/mm/"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

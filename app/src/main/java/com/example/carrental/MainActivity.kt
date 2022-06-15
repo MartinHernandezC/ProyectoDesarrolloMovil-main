@@ -9,6 +9,7 @@ import android.os.Looper
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import android.widget.ViewFlipper
@@ -16,11 +17,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     var v_flipper: ViewFlipper? = null
+    //var btn: Button = findViewById(R.id.btnh)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_main)
+
+        /*btn.setOnClickListener{
+            val intent = Intent(this,LoginActivity::class.java);
+            startActivity(intent);
+        }*/
 
         val barAction = supportActionBar
         val loader = ProgressBar(this)
@@ -44,11 +52,12 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this,ActivityHome::class.java))
                     true
                 }
-                R.id.pin_drop ->{
-                    startActivity(Intent(this, ActivityHome::class.java))
+                R.id.contacto ->{
+                    startActivity(Intent(this, ContactoActivity::class.java))
                     true
                 }
-                R.id.search_location -> {
+                R.id.catalogo -> {
+                    startActivity(Intent(this, CatalogoActivity::class.java))
                     true
                 }
                 else -> false
@@ -71,7 +80,6 @@ class MainActivity : AppCompatActivity() {
         v_flipper!!.setInAnimation(this, android.R.anim.slide_in_left)
         v_flipper!!.setOutAnimation(this, android.R.anim.slide_out_right)
     }
-
 }
 
 
