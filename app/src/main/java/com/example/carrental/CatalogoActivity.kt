@@ -2,10 +2,13 @@ package com.example.carrental
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class CatalogoActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_catalogo)
@@ -16,7 +19,6 @@ class CatalogoActivity : AppCompatActivity() {
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
         recyclerview.layoutManager = LinearLayoutManager(this)
         val CatalogEntityList = ArrayList<CatalogEntity>()
-
         CatalogEntityList.add(
             CatalogEntity(
                 R.drawable.suv,
@@ -89,7 +91,7 @@ class CatalogoActivity : AppCompatActivity() {
 
         CatalogEntityList.add(
             CatalogEntity(
-                R.drawable.ghostbusters,
+                R.drawable.ghostgusters,
                 "Ecto-1",
                 "1959",
                 "Cadillac ",
@@ -103,7 +105,7 @@ class CatalogoActivity : AppCompatActivity() {
                 R.drawable.papamovil,
                 "Papamovil ",
                 "2022 DC",
-                "Vaticano Sa de SV",
+                "Vaticano city",
                 "Blanco",
                 "Amen"
             )
@@ -130,8 +132,6 @@ class CatalogoActivity : AppCompatActivity() {
                 "Acabado de semillas de sesamo, ruedas de pepinillos, interior de cuero asado y debajo un freidor de papas con inyeccion disel y doble filtro para la grasa"
             )
         )
-
-
         val adapter = CatalogAdapter(CatalogEntityList)
         recyclerview.adapter = adapter
     }

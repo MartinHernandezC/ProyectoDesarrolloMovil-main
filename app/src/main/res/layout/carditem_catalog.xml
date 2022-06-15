@@ -17,8 +17,7 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="5"
-            android:rowCount="2">
+            android:columnCount="4">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -28,12 +27,14 @@
                 android:layout_gravity="center">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Modelo"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/Modelo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -49,14 +50,14 @@
                 android:layout_gravity="center">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Año"
-                    android:textStyle="bold">
-
-                </TextView>
+                    android:textStyle="bold"/>
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/anio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -74,12 +75,14 @@
                 android:rowCount="2">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Marca"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/Marca"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -96,6 +99,7 @@
                 android:rowCount="2">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Color"
@@ -103,6 +107,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/Color"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -125,6 +130,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Modelo"
@@ -132,6 +138,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/Descripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -19,7 +19,7 @@
         />
     <item
         android:enabled="true"
-        android:title="Inicio"
+        android:title="Agendar"
         android:icon="@drawable/ic_baseline_home_24"
         android:id="@+id/home"
         app:showAsAction="ifRoom"

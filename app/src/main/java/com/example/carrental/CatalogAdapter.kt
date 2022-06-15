@@ -5,7 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import java.security.AccessController.getContext
 
 public class CatalogAdapter(private val mList: List<CatalogEntity>) : RecyclerView.Adapter<CatalogAdapter.ViewHolder>() {
 
@@ -34,6 +36,10 @@ public class CatalogAdapter(private val mList: List<CatalogEntity>) : RecyclerVi
         holder.Marca.text = ItemsViewModel.Marca
         holder.Color.text = ItemsViewModel.Color
         holder.Descripcion.text = ItemsViewModel.Descripcion
+
+        holder.imageView.setOnClickListener{
+            Toast.makeText( holder.itemView.context, ItemsViewModel.Modelo, Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int {
