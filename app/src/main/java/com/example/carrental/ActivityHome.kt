@@ -11,6 +11,10 @@ class ActivityHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        val barAction = supportActionBar
+        barAction?.setDisplayShowHomeEnabled(true)
+        barAction?.setIcon(R.drawable.coche)
+
         val spinner = findViewById<Spinner>(R.id.spn1,);
         val spinner2 = findViewById<Spinner>(R.id.spn2,);
         val lista = listOf("Zapopan", "Guadalajara", "Tlajomulco");

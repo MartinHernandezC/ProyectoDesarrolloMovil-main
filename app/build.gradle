@@ -31,6 +31,12 @@ android {
     }
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+tasks.register("prepareKotlinBuildScriptModel"){}
+
 dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'io.coil-kt:coil:2.1.0'

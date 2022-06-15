@@ -13,5 +13,8 @@ class ContactoActivity : AppCompatActivity() {
         btn.setOnClickListener{
             Toast.makeText(this, "Gracias por los comentarios", Toast.LENGTH_SHORT).show()
         }
+        val barAction = supportActionBar
+        barAction?.setDisplayShowHomeEnabled(true)
+        barAction?.setIcon(R.drawable.coche)
     }
 }
