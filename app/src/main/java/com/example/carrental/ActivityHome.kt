@@ -3,9 +3,7 @@ package com.example.carrental
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.EditText
-import android.widget.Spinner
+import android.widget.*
 import java.util.*
 
 class ActivityHome : AppCompatActivity() {
@@ -34,7 +32,7 @@ class ActivityHome : AppCompatActivity() {
                 this@ActivityHome,
                 DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
 
-                   
+
                     editText.setText("" + dayOfMonth + "/" + monthOfYear + "/" + year)
 
                 },
@@ -62,6 +60,10 @@ class ActivityHome : AppCompatActivity() {
 
             dpd2.show()
 
+        }
+        val btn = findViewById<Button>(R.id.button4);
+        btn.setOnClickListener(){
+            Toast.makeText( this, "Se han guardado los datos", Toast.LENGTH_SHORT).show()
         }
     }
 }
