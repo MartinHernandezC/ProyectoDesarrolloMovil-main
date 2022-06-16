@@ -46,7 +46,13 @@ class MainActivity : AppCompatActivity() {
             supportActionBar?.show()
         }, 3000)
 
-        navView.setOnItemReselectedListener { item -> 
+        val images = intArrayOf(R.drawable.coupe, R.drawable.sedan, R.drawable.suv)
+        v_flipper = findViewById(R.id.v_flipper)
+        for (image in images) {
+            FlipperImagenes(image)
+    }
+
+        navView.setOnItemReselectedListener { item ->
             when(item.itemId){
                 R.id.home -> {
                     startActivity(Intent(this,ActivityHome::class.java))
@@ -62,13 +68,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 else -> false
             }
-            
+
         }
-        val images = intArrayOf(R.drawable.coupe, R.drawable.sedan, R.drawable.suv)
-        v_flipper = findViewById(R.id.v_flipper)
-        for (image in images) {
-            FlipperImagenes(image)
-    }
 
     }
     fun FlipperImagenes(image: Int) {
@@ -80,6 +81,8 @@ class MainActivity : AppCompatActivity() {
         v_flipper!!.setInAnimation(this, android.R.anim.slide_in_left)
         v_flipper!!.setOutAnimation(this, android.R.anim.slide_out_right)
     }
+
+
 }
 
 

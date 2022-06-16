@@ -1,10 +1,14 @@
 package com.example.carrental
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import android.view.Menu
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.util.*
 
 class CatalogoActivity : AppCompatActivity() {
 
@@ -29,7 +33,6 @@ class CatalogoActivity : AppCompatActivity() {
                 "Nuevo camioneta Suburban!"
             )
         )
-
         CatalogEntityList.add(
             CatalogEntity(
                 R.drawable.sedan,
@@ -105,7 +108,7 @@ class CatalogoActivity : AppCompatActivity() {
                 R.drawable.papamovil,
                 "Papamovil ",
                 "2022 DC",
-                "Vaticano city",
+                "Vaticano City",
                 "Blanco",
                 "Amen"
             )
@@ -132,7 +135,10 @@ class CatalogoActivity : AppCompatActivity() {
                 "Acabado de semillas de sesamo, ruedas de pepinillos, interior de cuero asado y debajo un freidor de papas con inyeccion disel y doble filtro para la grasa"
             )
         )
+
+
         val adapter = CatalogAdapter(CatalogEntityList)
         recyclerview.adapter = adapter
+
     }
 }
