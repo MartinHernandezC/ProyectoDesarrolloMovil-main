@@ -92,7 +92,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="5dp"
         android:gravity="center"
-        android:text="Recibir correo respuesta"
+        android:text="Aceptar Terminos y condiciones"
         android:textColor="@color/golden"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btne"
+        android:id="@+id/btnSubmit"
         android:layout_width="114dp"
         android:layout_height="50dp"
         android:layout_marginStart="5dp"
